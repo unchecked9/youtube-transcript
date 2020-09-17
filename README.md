@@ -17,7 +17,7 @@ Here you will find the version of Python that is required to run this project. D
 
 Here we will use a module called pipenv. So what you will want to do is go to folder where this README is at and then open up a powershell there. What you will do next is run the command 
 $ pip install pipenv
-This will install this module and then now we will use it by running this command next 
+This will install this module and then now we will use it by running this command next \n
 $ virtualenv .
 This command will actually set up the environment for us to use. Now that it is set up you will run this to activate the virtualenv
 $ .\Scripts\activate
