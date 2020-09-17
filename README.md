@@ -16,17 +16,25 @@ Here you will find the version of Python that is required to run this project. D
 ### Virtual Env set up
 
 Here we will use a module called pipenv. So what you will want to do is go to folder where this README is at and then open up a powershell there. What you will do next is run the command 
+```
 $ pip install pipenv
-This will install this module and then now we will use it by running this command next \n
+```
+This will install this module and then now we will use it by running this command next 
+```
 $ virtualenv .
+```
 This command will actually set up the environment for us to use. Now that it is set up you will run this to activate the virtualenv
+```
 $ .\Scripts\activate
+```
 Now you are in the virtual environment and set up to finish up the installation.
 
 ### Modules installation
 
 Now that you are inside your activated installation we will download all the required modules for the project to run
+```
 $ pip install scrapy google-api-python-client google-auth google-auth-oauthlib google-auth-httplib2
+```
 Once this finishes you are all set up to run the project.
 
 ## Running the project
@@ -34,15 +42,21 @@ Once this finishes you are all set up to run the project.
 ### Running the channel/playlist transcript retriever
 
 You will need to navigate back into the folder this README is inside of in powershell and make sure you are in the activated environment. See above on how to activate the environment. Now you will have to move into the folder transcriptscraper using this command.
+```
 $ cd transcriptscraper
+```
 Now that you are in the correct space you are able to use the project. Now you will have to input the channel or playlist url that you wish to download from, and you will also have to input the name of the output file. Here are two examples of using the application.
 
 Channel:
+```
 $ scrapy crawl channel -a url=URL -o OUTPUT_FILE.csv
+```
 where you will replace URL with the channels url and OUTPUT_FILE with whatever you want to name the csv file that gets output with all the transcripts.
 
 Playlist:
+```
 $ scrapy crawl playlist -a url=URL -o OUTPUT_FILE.csv
+```
 where you will replace URL with the playlists url and OUTPUT_FILE with whatever you want to name the csv file that gets output with all the transcripts.
 
 ## Alternate Installation
