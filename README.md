@@ -1,19 +1,19 @@
-### youtube-transcript
+# youtube-transcript
 
 ## Installation
 
-# Google project set up
+### Google project set up
 
 Google has very good steps to follow regarding a project set up as well as setting up credentials. Make sure you set up OAuth2.0 credentials to work with this application. Once you have the OAuth2.0 credentials set up you will have to wait for Google's approval before it will work. However you can still get ahead of the game and add in the client_secrets.json file from the credentials you set up in Google developers console.
 https://developers.google.com/youtube/registering_an_application
 
-# Python project set up
+### Python project set up
 
 Now that you have the google part set up you just gotta set up the python project so that you can run the code.
 https://www.python.org/downloads/release/python-378/ 
 Here you will find the version of Python that is required to run this project. Download from either the mac or windows installers provided and then we will move on to getting a virtual environment set up.
 
-# Virtual Env set up
+### Virtual Env set up
 
 Here we will use a module called pipenv. So what you will want to do is go to folder where this README is at and then open up a powershell there. What you will do next is run the command 
 $ pip install pipenv
@@ -23,7 +23,7 @@ This command will actually set up the environment for us to use. Now that it is 
 $ .\Scripts\activate
 Now you are in the virtual environment and set up to finish up the installation.
 
-# Modules installation
+### Modules installation
 
 Now that you are inside your activated installation we will download all the required modules for the project to run
 $ pip install scrapy google-api-python-client google-auth google-auth-oauthlib google-auth-httplib2
@@ -31,7 +31,7 @@ Once this finishes you are all set up to run the project.
 
 ## Running the project
 
-# Running the channel/playlist transcript retriever
+### Running the channel/playlist transcript retriever
 
 You will need to navigate back into the folder this README is inside of in powershell and make sure you are in the activated environment. See above on how to activate the environment. Now you will have to move into the folder transcriptscraper using this command.
 $ cd transcriptscraper
@@ -47,7 +47,7 @@ where you will replace URL with the playlists url and OUTPUT_FILE with whatever 
 
 ## Alternate Installation
 
-# Anaconda Installation
+### Anaconda Installation
 
 If you are having trouble with the installation you can try using this method of installing scrapy 
 https://docs.scrapy.org/en/latest/intro/install.html#windows
