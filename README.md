@@ -59,6 +59,14 @@ $ scrapy crawl playlist -a url=URL -o OUTPUT_FILE.csv
 ```
 where you will replace URL with the playlists url and OUTPUT_FILE with whatever you want to name the csv file that gets output with all the transcripts.
 
+Keep in mind some URL's will have special characters that will require you to surround them with quotes '' when you run the program.
+
+EX:
+```
+$ scrapy crawl playlist -a url='URL with special characters' -o OUTPUT_FILE.csv
+```
+
+
 ## Alternate Installation
 
 ### Anaconda Installation
